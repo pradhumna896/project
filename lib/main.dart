@@ -15,22 +15,36 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(),
       body:Column(
+        
           mainAxisAlignment: MainAxisAlignment.center,
+        
+          
           children: [
+            Padding(padding: EdgeInsets.all(10.0)),
+            Align(
+              alignment: Alignment.center,
+            ),
+            
             TextField(
+              
               decoration: InputDecoration(
                 border: OutlineInputBorder(),labelText: 'username'
               ),
             ),
+             Padding(padding: EdgeInsets.all(10.0)),
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),labelText: 'password'
 
               ),
             ),
+             Padding(padding: EdgeInsets.all(10.0)),
+            FlatButton(
+              color: Colors.amberAccent,
+              onPressed:(){}, child: Text("login"))
     
 
-            )
+          
           ],
           
       
